@@ -56,15 +56,71 @@
 		EEE8E2532019F65400A9EE06 /* Notes */ = {
 			isa = PBXGroup;
 			children = (
-				EEE8E2542019F65400A9EE06 /* AppDelegate.swift */,
-				EEE8E2562019F65400A9EE06 /* ViewController.swift */,
-				EEE8E2582019F65400A9EE06 /* Main.storyboard */,
-				EEE8E25E2019F65400A9EE06 /* Assets.xcassets */,
-				EEE8E2602019F65400A9EE06 /* LaunchScreen.storyboard */,
-				EEE8E2632019F65400A9EE06 /* Info.plist */,
-				EEE8E25B2019F65400A9EE06 /* Notes.xcdatamodeld */,
+				EEE8E2692019F83F00A9EE06 /* Application Delegate */,
+				EEE8E26F2019F89E00A9EE06 /* Data Models */,
+				EEE8E26A2019F84900A9EE06 /* Resources */,
+				EEE8E26B2019F85800A9EE06 /* Storyboards */,
+				EEE8E26C2019F86D00A9EE06 /* Supporting Files */,
+				EEE8E26D2019F87A00A9EE06 /* View Controllers */,
 			);
 			path = Notes;
+			sourceTree = "<group>";
+		};
+		EEE8E2692019F83F00A9EE06 /* Application Delegate */ = {
+			isa = PBXGroup;
+			children = (
+				EEE8E2542019F65400A9EE06 /* AppDelegate.swift */,
+			);
+			path = "Application Delegate";
+			sourceTree = "<group>";
+		};
+		EEE8E26A2019F84900A9EE06 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				EEE8E25E2019F65400A9EE06 /* Assets.xcassets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		EEE8E26B2019F85800A9EE06 /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				EEE8E2582019F65400A9EE06 /* Main.storyboard */,
+				EEE8E2602019F65400A9EE06 /* LaunchScreen.storyboard */,
+			);
+			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		EEE8E26C2019F86D00A9EE06 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				EEE8E2632019F65400A9EE06 /* Info.plist */,
+			);
+			path = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		EEE8E26D2019F87A00A9EE06 /* View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				EEE8E26E2019F88400A9EE06 /* Root View Controller */,
+			);
+			path = "View Controllers";
+			sourceTree = "<group>";
+		};
+		EEE8E26E2019F88400A9EE06 /* Root View Controller */ = {
+			isa = PBXGroup;
+			children = (
+				EEE8E2562019F65400A9EE06 /* ViewController.swift */,
+			);
+			path = "Root View Controller";
+			sourceTree = "<group>";
+		};
+		EEE8E26F2019F89E00A9EE06 /* Data Models */ = {
+			isa = PBXGroup;
+			children = (
+				EEE8E25B2019F65400A9EE06 /* Notes.xcdatamodeld */,
+			);
+			path = "Data Models";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -281,6 +337,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = Y93HUJS49V;
 				INFOPLIST_FILE = Notes/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = br.com.victormelo.Notes;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -296,6 +353,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = Y93HUJS49V;
 				INFOPLIST_FILE = Notes/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = br.com.victormelo.Notes;
 				PRODUCT_NAME = "$(TARGET_NAME)";
