@@ -7,9 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		EEBE71D2201A1E0900BCB778 /* Notes.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EEBE71D1201A1E0900BCB778 /* Notes.storyboard */; };
+		EEBE71D8201A1E1700BCB778 /* NotesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEBE71D5201A1E1600BCB778 /* NotesViewController.swift */; };
+		EEBE71D9201A1E1700BCB778 /* AddNoteViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEBE71D7201A1E1600BCB778 /* AddNoteViewController.swift */; };
 		EEE8E2552019F65400A9EE06 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEE8E2542019F65400A9EE06 /* AppDelegate.swift */; };
-		EEE8E2572019F65400A9EE06 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEE8E2562019F65400A9EE06 /* ViewController.swift */; };
-		EEE8E25A2019F65400A9EE06 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EEE8E2582019F65400A9EE06 /* Main.storyboard */; };
 		EEE8E25D2019F65400A9EE06 /* Notes.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = EEE8E25B2019F65400A9EE06 /* Notes.xcdatamodeld */; };
 		EEE8E25F2019F65400A9EE06 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EEE8E25E2019F65400A9EE06 /* Assets.xcassets */; };
 		EEE8E2622019F65400A9EE06 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EEE8E2602019F65400A9EE06 /* LaunchScreen.storyboard */; };
@@ -17,10 +18,11 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		EEBE71D1201A1E0900BCB778 /* Notes.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Notes.storyboard; sourceTree = "<group>"; };
+		EEBE71D5201A1E1600BCB778 /* NotesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NotesViewController.swift; sourceTree = "<group>"; };
+		EEBE71D7201A1E1600BCB778 /* AddNoteViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddNoteViewController.swift; sourceTree = "<group>"; };
 		EEE8E2512019F65400A9EE06 /* Notes.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Notes.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EEE8E2542019F65400A9EE06 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		EEE8E2562019F65400A9EE06 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		EEE8E2592019F65400A9EE06 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		EEE8E25C2019F65400A9EE06 /* Notes.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Notes.xcdatamodel; sourceTree = "<group>"; };
 		EEE8E25E2019F65400A9EE06 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		EEE8E2612019F65400A9EE06 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -39,6 +41,31 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		EEBE71D3201A1E1600BCB778 /* Notes */ = {
+			isa = PBXGroup;
+			children = (
+				EEBE71D4201A1E1600BCB778 /* Notes View Controller */,
+				EEBE71D6201A1E1600BCB778 /* Add Note View Controller */,
+			);
+			path = Notes;
+			sourceTree = "<group>";
+		};
+		EEBE71D4201A1E1600BCB778 /* Notes View Controller */ = {
+			isa = PBXGroup;
+			children = (
+				EEBE71D5201A1E1600BCB778 /* NotesViewController.swift */,
+			);
+			path = "Notes View Controller";
+			sourceTree = "<group>";
+		};
+		EEBE71D6201A1E1600BCB778 /* Add Note View Controller */ = {
+			isa = PBXGroup;
+			children = (
+				EEBE71D7201A1E1600BCB778 /* AddNoteViewController.swift */,
+			);
+			path = "Add Note View Controller";
+			sourceTree = "<group>";
+		};
 		EEE8E2482019F65400A9EE06 = {
 			isa = PBXGroup;
 			children = (
@@ -88,7 +115,7 @@
 		EEE8E26B2019F85800A9EE06 /* Storyboards */ = {
 			isa = PBXGroup;
 			children = (
-				EEE8E2582019F65400A9EE06 /* Main.storyboard */,
+				EEBE71D1201A1E0900BCB778 /* Notes.storyboard */,
 				EEE8E2602019F65400A9EE06 /* LaunchScreen.storyboard */,
 			);
 			path = Storyboards;
@@ -105,17 +132,9 @@
 		EEE8E26D2019F87A00A9EE06 /* View Controllers */ = {
 			isa = PBXGroup;
 			children = (
-				EEE8E26E2019F88400A9EE06 /* Root View Controller */,
+				EEBE71D3201A1E1600BCB778 /* Notes */,
 			);
 			path = "View Controllers";
-			sourceTree = "<group>";
-		};
-		EEE8E26E2019F88400A9EE06 /* Root View Controller */ = {
-			isa = PBXGroup;
-			children = (
-				EEE8E2562019F65400A9EE06 /* ViewController.swift */,
-			);
-			path = "Root View Controller";
 			sourceTree = "<group>";
 		};
 		EEE8E26F2019F89E00A9EE06 /* Core Data */ = {
@@ -193,9 +212,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EEBE71D2201A1E0900BCB778 /* Notes.storyboard in Resources */,
 				EEE8E2622019F65400A9EE06 /* LaunchScreen.storyboard in Resources */,
 				EEE8E25F2019F65400A9EE06 /* Assets.xcassets in Resources */,
-				EEE8E25A2019F65400A9EE06 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -206,7 +225,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				EEE8E2572019F65400A9EE06 /* ViewController.swift in Sources */,
+				EEBE71D8201A1E1700BCB778 /* NotesViewController.swift in Sources */,
+				EEBE71D9201A1E1700BCB778 /* AddNoteViewController.swift in Sources */,
 				EEE8E25D2019F65400A9EE06 /* Notes.xcdatamodeld in Sources */,
 				EEE8E2722019F96F00A9EE06 /* CoreDataManager.swift in Sources */,
 				EEE8E2552019F65400A9EE06 /* AppDelegate.swift in Sources */,
@@ -216,14 +236,6 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		EEE8E2582019F65400A9EE06 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				EEE8E2592019F65400A9EE06 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		EEE8E2602019F65400A9EE06 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -354,7 +366,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = br.com.victormelo.Notes;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -370,7 +382,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = br.com.victormelo.Notes;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
