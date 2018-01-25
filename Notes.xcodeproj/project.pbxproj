@@ -13,6 +13,7 @@
 		EEE8E25D2019F65400A9EE06 /* Notes.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = EEE8E25B2019F65400A9EE06 /* Notes.xcdatamodeld */; };
 		EEE8E25F2019F65400A9EE06 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EEE8E25E2019F65400A9EE06 /* Assets.xcassets */; };
 		EEE8E2622019F65400A9EE06 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EEE8E2602019F65400A9EE06 /* LaunchScreen.storyboard */; };
+		EEE8E2722019F96F00A9EE06 /* CoreDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEE8E2712019F96F00A9EE06 /* CoreDataManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		EEE8E25E2019F65400A9EE06 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		EEE8E2612019F65400A9EE06 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		EEE8E2632019F65400A9EE06 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EEE8E2712019F96F00A9EE06 /* CoreDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,7 +59,8 @@
 			isa = PBXGroup;
 			children = (
 				EEE8E2692019F83F00A9EE06 /* Application Delegate */,
-				EEE8E26F2019F89E00A9EE06 /* Data Models */,
+				EEE8E26F2019F89E00A9EE06 /* Core Data */,
+				EEE8E2702019F95C00A9EE06 /* Managers */,
 				EEE8E26A2019F84900A9EE06 /* Resources */,
 				EEE8E26B2019F85800A9EE06 /* Storyboards */,
 				EEE8E26C2019F86D00A9EE06 /* Supporting Files */,
@@ -115,12 +118,20 @@
 			path = "Root View Controller";
 			sourceTree = "<group>";
 		};
-		EEE8E26F2019F89E00A9EE06 /* Data Models */ = {
+		EEE8E26F2019F89E00A9EE06 /* Core Data */ = {
 			isa = PBXGroup;
 			children = (
 				EEE8E25B2019F65400A9EE06 /* Notes.xcdatamodeld */,
 			);
-			path = "Data Models";
+			path = "Core Data";
+			sourceTree = "<group>";
+		};
+		EEE8E2702019F95C00A9EE06 /* Managers */ = {
+			isa = PBXGroup;
+			children = (
+				EEE8E2712019F96F00A9EE06 /* CoreDataManager.swift */,
+			);
+			path = Managers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -197,6 +208,7 @@
 			files = (
 				EEE8E2572019F65400A9EE06 /* ViewController.swift in Sources */,
 				EEE8E25D2019F65400A9EE06 /* Notes.xcdatamodeld in Sources */,
+				EEE8E2722019F96F00A9EE06 /* CoreDataManager.swift in Sources */,
 				EEE8E2552019F65400A9EE06 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
