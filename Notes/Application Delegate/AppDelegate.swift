@@ -13,6 +13,7 @@ import CoreData
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
     // MARK: - Properties
+    
     var window: UIWindow?
     
     // MARK: - Application Life Cycle
