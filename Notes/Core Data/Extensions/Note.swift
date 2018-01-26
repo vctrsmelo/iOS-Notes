@@ -7,3 +7,13 @@
 //
 
 import Foundation
+
+extension Note {
+    var updatedAtAsDate: Date {
+        return updatedAt ?? Date()
+    }
+    
+    var createdAtAsDate: Date {
+        return createdAt ?? Date()
+    }
+}

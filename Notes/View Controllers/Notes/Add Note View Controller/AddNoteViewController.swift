@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import CoreData
 
 class AddNoteViewController: UIViewController {
 
@@ -15,6 +16,8 @@ class AddNoteViewController: UIViewController {
     @IBOutlet var titleTextField: UITextField!
     @IBOutlet var contentsTextView: UITextView!
 
+    var managedObjectContext: NSManagedObjectContext?
+    
     // MARK: - View Life Cycle
 
     override func viewDidLoad() {
@@ -33,7 +36,21 @@ class AddNoteViewController: UIViewController {
     // MARK: - Actions
 
     @IBAction func save(sender: UIBarButtonItem) {
-
+        guard let managedObjectContext = managedObjectContext else { return }
+        guard let title = titleTextField.text, !title.isEmpty else {
+            showAlert(with: "Title Missing", and: "Your note doesn't have a title.")
+            return
+        }
+        
+        let note = Note(context: managedObjectContext)
+        
+        note.createdAt = Date()
+        note.updatedAt = Date()
+        note.title = title
+        note.contents = contentsTextView.text
+        
+        _ = navigationController?.popViewController(animated: true)
+        
     }
 
 }

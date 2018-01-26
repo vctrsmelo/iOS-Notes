@@ -10,6 +10,9 @@
 		EEBE71D2201A1E0900BCB778 /* Notes.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EEBE71D1201A1E0900BCB778 /* Notes.storyboard */; };
 		EEBE71D8201A1E1700BCB778 /* NotesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEBE71D5201A1E1600BCB778 /* NotesViewController.swift */; };
 		EEBE71D9201A1E1700BCB778 /* AddNoteViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEBE71D7201A1E1600BCB778 /* AddNoteViewController.swift */; };
+		EEBE71DC201A1F7800BCB778 /* UIViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEBE71DB201A1F7800BCB778 /* UIViewController.swift */; };
+		EEBE71DF201A239400BCB778 /* NoteTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEBE71DE201A239400BCB778 /* NoteTableViewCell.swift */; };
+		EEBE71E2201A722400BCB778 /* Note.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEBE71E1201A722400BCB778 /* Note.swift */; };
 		EEE8E2552019F65400A9EE06 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEE8E2542019F65400A9EE06 /* AppDelegate.swift */; };
 		EEE8E25D2019F65400A9EE06 /* Notes.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = EEE8E25B2019F65400A9EE06 /* Notes.xcdatamodeld */; };
 		EEE8E25F2019F65400A9EE06 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EEE8E25E2019F65400A9EE06 /* Assets.xcassets */; };
@@ -21,6 +24,9 @@
 		EEBE71D1201A1E0900BCB778 /* Notes.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Notes.storyboard; sourceTree = "<group>"; };
 		EEBE71D5201A1E1600BCB778 /* NotesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NotesViewController.swift; sourceTree = "<group>"; };
 		EEBE71D7201A1E1600BCB778 /* AddNoteViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddNoteViewController.swift; sourceTree = "<group>"; };
+		EEBE71DB201A1F7800BCB778 /* UIViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIViewController.swift; sourceTree = "<group>"; };
+		EEBE71DE201A239400BCB778 /* NoteTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoteTableViewCell.swift; sourceTree = "<group>"; };
+		EEBE71E1201A722400BCB778 /* Note.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Note.swift; sourceTree = "<group>"; };
 		EEE8E2512019F65400A9EE06 /* Notes.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Notes.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EEE8E2542019F65400A9EE06 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		EEE8E25C2019F65400A9EE06 /* Notes.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Notes.xcdatamodel; sourceTree = "<group>"; };
@@ -53,6 +59,7 @@
 		EEBE71D4201A1E1600BCB778 /* Notes View Controller */ = {
 			isa = PBXGroup;
 			children = (
+				EEBE71DD201A238500BCB778 /* Table View Cells */,
 				EEBE71D5201A1E1600BCB778 /* NotesViewController.swift */,
 			);
 			path = "Notes View Controller";
@@ -64,6 +71,30 @@
 				EEBE71D7201A1E1600BCB778 /* AddNoteViewController.swift */,
 			);
 			path = "Add Note View Controller";
+			sourceTree = "<group>";
+		};
+		EEBE71DA201A1F7800BCB778 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				EEBE71DB201A1F7800BCB778 /* UIViewController.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		EEBE71DD201A238500BCB778 /* Table View Cells */ = {
+			isa = PBXGroup;
+			children = (
+				EEBE71DE201A239400BCB778 /* NoteTableViewCell.swift */,
+			);
+			path = "Table View Cells";
+			sourceTree = "<group>";
+		};
+		EEBE71E0201A721C00BCB778 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				EEBE71E1201A722400BCB778 /* Note.swift */,
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 		EEE8E2482019F65400A9EE06 = {
@@ -90,6 +121,7 @@
 				EEE8E2702019F95C00A9EE06 /* Managers */,
 				EEE8E26A2019F84900A9EE06 /* Resources */,
 				EEE8E26B2019F85800A9EE06 /* Storyboards */,
+				EEBE71DA201A1F7800BCB778 /* Extensions */,
 				EEE8E26C2019F86D00A9EE06 /* Supporting Files */,
 				EEE8E26D2019F87A00A9EE06 /* View Controllers */,
 			);
@@ -140,6 +172,7 @@
 		EEE8E26F2019F89E00A9EE06 /* Core Data */ = {
 			isa = PBXGroup;
 			children = (
+				EEBE71E0201A721C00BCB778 /* Extensions */,
 				EEE8E25B2019F65400A9EE06 /* Notes.xcdatamodeld */,
 			);
 			path = "Core Data";
@@ -227,8 +260,11 @@
 			files = (
 				EEBE71D8201A1E1700BCB778 /* NotesViewController.swift in Sources */,
 				EEBE71D9201A1E1700BCB778 /* AddNoteViewController.swift in Sources */,
+				EEBE71DC201A1F7800BCB778 /* UIViewController.swift in Sources */,
+				EEBE71E2201A722400BCB778 /* Note.swift in Sources */,
 				EEE8E25D2019F65400A9EE06 /* Notes.xcdatamodeld in Sources */,
 				EEE8E2722019F96F00A9EE06 /* CoreDataManager.swift in Sources */,
+				EEBE71DF201A239400BCB778 /* NoteTableViewCell.swift in Sources */,
 				EEE8E2552019F65400A9EE06 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
